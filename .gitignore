@@ -1,0 +1,7 @@
+*.exp
+*.pdb
+*.obj
+/**/__astcache/*
+/**/__history/*
+/**/__recovery/*
+/**/Debug/*

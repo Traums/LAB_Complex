@@ -1,1 +1,1 @@
-![Иллюстрация к проекту](https://github.com/LAB_Complex/image/image.png)
+![Иллюстрация к проекту](https://github.com/Traums/LAB_Complex/image/image.png)

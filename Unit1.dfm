@@ -17,7 +17,7 @@ object Form1: TForm1
   TextHeight = 13
   object Label1: TLabel
     Left = 352
-    Top = 118
+    Top = 198
     Width = 177
     Height = 24
     Caption = #1060#1072#1081#1083#1086#1074#1072#1103' '#1089#1080#1089#1090#1077#1084#1072':'
@@ -27,11 +27,10 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    Visible = False
   end
   object Label2: TLabel
     Left = 352
-    Top = 64
+    Top = 144
     Width = 102
     Height = 24
     Caption = #1050#1083#1072#1089#1090#1077#1088#1086#1074':'
@@ -99,10 +98,10 @@ object Form1: TForm1
       end>
   end
   object OpenFSButton: TButton
-    Left = 624
-    Top = 8
-    Width = 73
-    Height = 38
+    Left = 352
+    Top = 69
+    Width = 97
+    Height = 53
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100
     TabOrder = 2
     OnClick = OpenFSButtonClick
@@ -112,7 +111,7 @@ object Form1: TForm1
     Top = 381
     Width = 161
     Height = 56
-    Caption = #1059#1076#1072#1083#1080#1090#1100' '#1074#1099#1073#1088#1072#1085#1085#1091#1102' '#1089#1090#1088#1086#1082#1091
+    Caption = #1059#1076#1072#1083#1077#1085#1080#1077' '#1074#1099#1073#1088#1072#1085#1085#1086#1081' '#1089#1090#1088#1086#1082#1080
     TabOrder = 3
     OnClick = DeliteStringButtonClick
   end
@@ -124,14 +123,5 @@ object Form1: TForm1
     Caption = #1054#1095#1080#1089#1090#1082#1072' '#1090#1072#1073#1083#1080#1094#1099
     TabOrder = 4
     OnClick = ClearDBButtonClick
-  end
-  object Button1: TButton
-    Left = 576
-    Top = 368
-    Width = 161
-    Height = 69
-    Caption = #1054#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1087#1086#1090#1086#1082
-    TabOrder = 5
-    OnClick = Button1Click
   end
 end

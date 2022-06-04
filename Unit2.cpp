@@ -23,7 +23,6 @@ __fastcall Thread2::Thread2(FileSystem file,bool CreateSuspended)
 void __fastcall Thread2::Execute()
 {
 	count=0;
-	Form1->OpenFSButton->Enabled=false;
 	Form1->Edit1->Enabled=false;
 	char const * db_name = "Databases.db";
 

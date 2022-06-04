@@ -27,7 +27,6 @@ __published:	// IDE-managed Components
 	TButton *ClearDBButton;
 	TLabel *Label2;
 	TLabel *Label3;
-	TButton *Button1;
 	void __fastcall Edit1DblClick(TObject *Sender);
 	void __fastcall OpenFSButtonClick(TObject *Sender);
 	void __fastcall FormDestroy(TObject *Sender);
@@ -35,7 +34,6 @@ __published:	// IDE-managed Components
           TColumnIndex Column, TVSTTextType TextType, UnicodeString &CellText);
 	void __fastcall DeliteStringButtonClick(TObject *Sender);
 	void __fastcall ClearDBButtonClick(TObject *Sender);
-	void __fastcall Button1Click(TObject *Sender);
 
 
 private:

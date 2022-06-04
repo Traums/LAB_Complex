@@ -352,12 +352,6 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\redist\osx32\libmidas.dylib" Configuration="Release" Class="File">
-                    <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx64\libcgsqlite3.dylib" Configuration="Debug" Class="File">
                     <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
@@ -366,6 +360,12 @@
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin64\dbxora.dll" Configuration="Debug" Class="File">
                     <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\redist\osx32\libmidas.dylib" Configuration="Release" Class="File">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1103,8 +1103,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\redist\osx64\libsqlfb.dylib" Configuration="Debug" Class="File">
-                    <Platform Name="OSX64">
+                <DeployFile LocalName="$(BDS)\redist\osx32\libsqlib.dylib" Configuration="Debug" Class="File">
+                    <Platform Name="OSX32">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -1155,8 +1155,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\redist\osx32\libsqlib.dylib" Configuration="Debug" Class="File">
-                    <Platform Name="OSX32">
+                <DeployFile LocalName="$(BDS)\redist\osx64\libsqlfb.dylib" Configuration="Debug" Class="File">
+                    <Platform Name="OSX64">
                         <RemoteDir>Contents\MacOS\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>

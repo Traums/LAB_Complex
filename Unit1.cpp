@@ -17,7 +17,7 @@
 #pragma resource "*.dfm"
 TForm1 *Form1;
 FileSystem File;
-char const *db_name = "Database.db";
+char const *db_name = "Databases.db";
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
@@ -54,8 +54,6 @@ void __fastcall TForm1::OpenFSButtonClick(TObject *Sender)
 		wchar_t *fileName=str4.t_str();
 		File=Factory.CreateFS(fileName);
 
-
-		Form1->Label1->Visible = True;
 		File.ViewInfo(Label1);
 
 		ofstream out(db_name);
@@ -161,13 +159,18 @@ void TForm1::ReloadViewDB()
 						  nodeData->name = UnicodeString(answer);
 						  break;
 					  }
+
 				  }
+
 		}
+
 	}
+
 	sqlite3_finalize(pStmt);
 	sqlite3_close(db);
 	VirtualStringTree1->EndUpdate();
 }
+
 
 void __fastcall TForm1::ClearDBButtonClick(TObject *Sender)
 {
@@ -197,14 +200,4 @@ void TForm1::WorkToDB(AnsiString str){
 }
 
 
-
-void __fastcall TForm1::Button1Click(TObject *Sender)
-{
-	if(myTread2!=NULL)
-	{
-		myTread2->Terminate();
-		Form1->Label1->Caption = "Поток остновлен";
-	}
-}
-//---------------------------------------------------------------------------
 

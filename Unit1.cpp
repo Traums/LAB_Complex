@@ -17,7 +17,8 @@
 #pragma resource "*.dfm"
 TForm1 *Form1;
 FileSystem File;
-char const *db_name = "Databases.db";
+
+char const *db_name = "Database.db";
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)

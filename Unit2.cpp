@@ -24,7 +24,7 @@ void __fastcall Thread2::Execute()
 {
 	count=0;
 	Form1->Edit1->Enabled=false;
-	char const * db_name = "Databases.db";
+	char const * db_name = "Database.db";
 
 	sqlite3 *db;
 
@@ -34,9 +34,6 @@ void __fastcall Thread2::Execute()
 	}
 
 	Iterator iterator=Iterator(File);
-
-	//if(Form1->ClusterReadingMode->ItemIndex == 1)
-	//iterator = PassDecorator(iterator);
 
 	if(File.countCluster != 0)
 	{
